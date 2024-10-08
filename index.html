@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diego Manuel Gavilan Burgo - Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: url('ROBOT DE FONDO.jpg') no-repeat center center fixed; 
+            background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        }
+        
+        .btn-custom {
+            background-color: #007bff;
+            border-radius: 25px;
+            color: #fff;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        .rounded-circle {
+            width: 150px;
+            height: 150px;
+        }
+        
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #fff;
+        }
+        .rounded-circle {
+            width: 150px;
+            height: 150px;
+            transition: transform 0.4s ease-in-out; 
+        }
+        .rounded-circle:hover {
+            transform: rotate(360deg); 
+        }
+        .img-rodi {
+            max-width: 80%;
+            height: auto; 
+        }
+
+        section {
+            padding-top: 80px; 
+        }
+
+        header {
+            padding-top: 100px; 
+            background: url('estrellas.jpg') no-repeat center center;
+            background-size: cover; 
+            color: white;
+        }
+
+        /* Estilos para la sección Proyectos Recientes con fondo */
+        #portfolio {
+            background: url('proyecto-reciente-fondo.jpg') no-repeat center center;
+            background-size: cover;
+            color: white; /* Para que el texto sea visible sobre el fondo */
+        }
+
+        #portfolio h2, #portfolio p {
+            color: rgb(130, 53, 53); /* Asegura que el texto sea visible sobre la imagen */
+        }
+
+        .portfolio-item {
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente detrás de cada proyecto */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Estilos personalizados para la sección "Mi Stack" con colores */
+        #skills .col-lg-2 {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        #skills .col-lg-2:hover {
+            background-color: #00ff11;
+            color: white;
+        }
+
+        #skills i {
+            color: #ff0077;
+        }
+
+        #skills .col-lg-2:hover i {
+            color: white;
+        }
+        footer p {
+            color: white;
+             font-size: 18px; 
+                  margin: 0; 
+      }
+    
+section#about, section#contact {
+    padding: 50px 0; 
+    background-color: #4c8951; 
+}
+
+section h2 {
+    font-size: 36px; 
+    margin-bottom: 20px; 
+}
+
+section p {
+    font-size: 18px; 
+    line-height: 1.6; 
+    color: #333; 
+}
+
+section a {
+    color: #007bff; 
+    text-decoration: none; 
+}
+
+section a:hover {
+    text-decoration: underline; 
+}
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Menú colapsable -->
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <h4 class="text-white">Menú de Navegación</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#sobre-mi">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#skills">Mi Stack</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#portfolio">Proyectos Recientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#call-to-action">Descargar CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Encabezado -->
+    <header class="text-center py-5">
+        <div class="container">
+            <img src="robtica diego.jpeg" alt="Imagen de Perfil" class="rounded-circle mx-auto d-block mb-3">
+            <h1>Diego Manuel Gavilan Burgo</h1>
+            <p>Desarrollador | Apasionado por la Robótica y la Tecnología</p>
+            <a href="#sobre-mi" class="btn btn-custom mt-3">Conoce más sobre mí</a>
+        </div>
+    </header>
+
+    <section id="sobre-mi" class="py-5"style=" color: white;">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Mí</h2>
+            <p class="text-center"style=" color: white;">Soy Diego Manuel Gavilan Burgo, un desarrollador apasionado por la tecnología y la robótica. Con experiencia en proyectos de IoT, desarrollo web y enseñanza, me encanta experimentar con nuevas tecnologías y aportar soluciones creativas.</p>
+            
+            <div class="text-center mt-4">
+                <a href="#skills" class="btn btn-custom">Habilidad</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección Mi Stack con colores personalizados -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Mi Stack</h2>
+            <div class="row text-center">
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <i class="fab fa-html5 fa-3x"></i>
+                    <h4>HTML</h4>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <i class="fab fa-css3-alt fa-3x"></i>
+                    <h4>CSS</h4>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <i class="fab fa-js fa-3x"></i>
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <i class="fab fa-python fa-3x"></i>
+                    <h4>Python</h4>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <i class="fab fa-php fa-3x"></i>
+                    <h4>PHP</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Proyectos Recientes</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6 mb-4 portfolio-item">
+                    <a href="https://gallery.appinventor.mit.edu/?galleryid=6bd8b3e4-be22-41e0-9a9b-3c91ebe23fed">
+                        <img src="app.jpeg" class="img-fluid" alt="Proyecto 3">
+                        <p class="text-center mt-2">Proyecto App Inventor: Creación de aplicaciones móviles.</p>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="https://github.com/gaviol/roDI.git">
+                        <img src="rodi.jpg" class="img-rodi" alt="Proyecto 1">
+                        <p class="text-center mt-1">Es un robot inalámbrico con wifi.</p>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Sección Descargar CV -->
+    <section id="call-to-action" class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h2>Descarga mi Cv</h2>
+            <p> descubre más sobre mis habilidades y proyectos.</p>
+            <a href="diego gavilan CV.pdf" class="btn btn-custom">Descargar CV</a>
+        </div>
+    </section>
+<!-- Sección Contacto -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Formulario con Formspree -->
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="_replyto" placeholder="Tu correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom">Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-6 text-center">
+                <p><i class="fas fa-envelope"></i> diegoretoman@ejemplo.com</p>
+                <p><i class="fas fa-phone"></i>595+0 991863550</p>
+                <p><i class="fas fa-map-marker-alt"></i> santa Maria, Encarnacion, Paraguay</p>
+                <div class="social-icons">
+                   
+                   <a href="https://github.com/gaviol"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/diego-gavilan-b90538288"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 Diego Manuel Gavilan Burgo</p>
+            <div class="text-center mt-5">
+                <a href="https://github.com/gaviol" class="btn btn-custom">Conoce más sobre mi proyecto</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
